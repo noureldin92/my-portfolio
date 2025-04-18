@@ -11,7 +11,7 @@ const AboutStyle = () => {
         move: { opacity: 1, transition: { staggerChildren: 0.01, repeat: 0 } },
       }}
       initial={{ opacity: 0 }}
-      className="absolute bg-lightBackground dark:bg-darkBackground opacity-50 inset-0 rotate-45 grid grid-cols-40 -z-10 ">
+      className="absolute bg-lightBackground dark:bg-darkBackground opacity-50 inset-0 rotate-45 grid grid-cols-4 -z-10 ">
       {"*"
         .repeat(30)
         .split("")

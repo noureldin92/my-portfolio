@@ -4,7 +4,7 @@ import portfolio from "@/public/portfolio.jpg";
 const PortfolioImage = () => {
   return (
     <Image
-      className="rounded-lg self-center md:self-start w-auto h-auto"
+      className="rounded-lg self-center md:self-start w-auto h-auto shadow-lg shadow-black/40"
       src={portfolio}
       alt="mo'men personal image"
       priority

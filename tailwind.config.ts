@@ -30,7 +30,7 @@ const config: Config = {
         darkBackground: "url('/darkBackground.jpg')",
         triBackground: "url('/tri.jpg')",
         tri2Background: "url('/tri2.jpg')",
-        tri3Background: "url('/tri3.jpg')",
+        tri3Background: "url('/tri3.jpeg')",
       },
     },
   },

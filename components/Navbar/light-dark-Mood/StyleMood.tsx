@@ -2,6 +2,7 @@
 import { faSun, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -27,16 +28,19 @@ const StyleMood = () => {
 
   const notUndefined = icon !== undefined;
   return (
-    <span
+    <motion.span
+      initial={{ translateX: -150, rotate: 90, opacity: 0 }}
+      animate={{ translateX: 0, rotate: 0, opacity: 1 }}
+      transition={{ delay: 5, type: "spring" ,stiffness:70}}
       className={`group p-2 block text-center ${
-        notUndefined && "bg-darkBlue/50 dark:bg-lightBlue/20 cursor-pointer"
-      } w-10 h-10 rounded-full`}
+        notUndefined && "bg-[#0c7090] dark:bg-lightBlue/20 cursor-pointer"
+      } w-10 h-10 rounded-full shadow-md shadow-black/40 dark:shadow-gray-500/20`}
       onClick={moodToggle}>
       <FontAwesomeIcon
         icon={icon!}
         className="text-white  group-hover:scale-110 "
       />
-    </span>
+    </motion.span>
   );
 };
 

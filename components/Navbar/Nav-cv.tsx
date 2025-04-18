@@ -26,15 +26,17 @@ const Nav_cv = () => {
   return (
     <div
       ref={cvRef}
-      className="flex flex-col justify-center items-center gap-y-7 -mb-24 ">
-      <span
+      className="flex flex-col justify-center items-center gap-y-7 -mb-20 ">
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { type: "spring", delay: 5 } }}
         onClick={cvListHandler}
         className={`${
           playAnim ? "xr" : ""
         } cursor-pointer flex justify-center items-center gap-x-2 mb-auto`}>
         <Nav_cvIcon />
         <p className="text-xl text-white">C.V</p>
-      </span>
+      </motion.span>
       <motion.ul
         onViewportLeave={scrollEndsAnim}
         variants={{

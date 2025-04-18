@@ -51,9 +51,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth dark">
-      {/* <body className="bg-gradient-to-b from-lightBlue via-lightestBlue to-lightBlue dark:from-darkBlue dark:via-darkestBlue dark:to-darkBlue font-lexend"> */}
       <body
-        className={` font-lexend bg-lightBackground dark:bg-darkBackground bg-cover`}>
+        className={` font-lexend bg-[#FEFFEf] dark:bg-darkBackground bg-cover`}>
         <ThemeProvider attribute="class">
           <Navbar />
           {children}
